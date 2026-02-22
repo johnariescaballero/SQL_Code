@@ -1,4 +1,11 @@
 # Nashville Housing: End-to-End SQL Project
+
+### 🛠️ Key SQL Skills Applied
+* **Data Cleaning & ETL:** Self-Joins, `UPDATE` with `JOIN` logic, Staging table creation.
+* **Advanced Transformations:** Window Functions (`ROW_NUMBER`), CTEs.
+* **String Manipulation:** `SUBSTRING_INDEX`, `LOCATE`, `TRIM`, `REPLACE`.
+* **Schema Design:** DDL (`ALTER`, `DROP`), Data type standardization, Primary Key management.
+
 ## 1. Project Overview
 This project focuses on the cleaning and exploratory analysis of a Nashville Housing dataset. The goal is to transform a raw, unorganized dataset into a structured format for business intelligence and market research.
 
