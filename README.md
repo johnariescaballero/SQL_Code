@@ -1,15 +1,22 @@
 Nashville Housing: End-to-End SQL Project
+1. Project Overview
+This project focuses on the cleaning and exploratory analysis of a Nashville Housing dataset. The goal is to transform a raw, unorganized dataset into a structured format for business intelligence and market research.
 
-Project Overview
-A deep-dive into the Nashville housing market, focusing on transforming raw data into a clean, analysis-ready schema and performing exploratory analysis to identify market trends.
+2. Database Schema (ERD)
+Below is the visual map of the database. I transformed the raw housing_data into a refined staging1_data table, adding engineered columns for addresses and standardized dates.
 
-Project Phases
-[Completed] Phase 1: Data Cleaning & Transformation
-      Resolved BOM encoding on primary keys.
-      Populated missing addresses using self-joins on Parcel IDs.
-      Split complex address strings into Address, City, and State.
+3. Data Cleaning Highlights
+Self-Joins: Populated missing property addresses by matching Parcel IDs.
 
-[In Progress] Phase 2: Exploratory Data Analysis (EDA)
-      Identifying price trends by neighborhood.
-      Analyzing sales volume fluctuations over time.
+String Parsing: Split PropertyAddress and OwnerAddress into atomic columns (Address, City, State).
 
+De-duplication: Identified and removed duplicates using ROW_NUMBER().
+
+4. Repository Structure
+Scripts/Nashville_Housing_Data_Cleaning_Project.sql: Full SQL transformation script.
+
+Scripts/02_eda_queries.sql: (Coming Soon) Market trend analysis.
+
+Visuals/: Contains the schema diagram.
+
+<img width="346" height="535" alt="Nashville_Housing_ERD" src="https://github.com/user-attachments/assets/5d5fd6c6-795a-4156-aa7a-a6545a1bc78b" />
