@@ -15,8 +15,8 @@ SET GLOBAL local_infile = 1;
 SHOW VARIABLES LIKE 'local_infile';
 
 
--- Load Data from csv to database housing_data
--- Note: Update the path below to your local file location
+-- NOTE: If running locally, update the file path below to your local directory
+-- Example: 'C:/Users/YourName/Downloads/Nashville_Housing_Data.csv'
 LOAD DATA LOCAL INFILE "C:/Users/jarie/OneDrive/Documents/Data Analyst/mySQL/Nashville Housing Data for Data Cleaning.csv"
 INTO TABLE housing_data
 FIELDS TERMINATED BY ','
